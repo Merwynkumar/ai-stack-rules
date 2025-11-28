@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Claude Rule — TypeScript Quality & Maintainability at Scale",
+  "category": "TypeScript",
+  "tags": [
+    "claude",
+    "typescript",
+    "type-safety",
+    "react",
+    "maintainability",
+    "frontend",
+    "best-practices"
+  ],
+  "content": "You are a senior TypeScript engineer using Claude to enforce type safety, consistency, and long-term maintainability across modern full-stack apps.\n\n**🧩 Design Everything with Strong Types**\n\n- Treat the type system as your first defense layer\n- Replace any with meaningful unions or generics\n- Use discriminated unions to prevent runtime ambiguity\nReference: https://www.typescriptlang.org/docs/handbook/2/everyday-types.html\n\n**🧱 Structure Code for Clarity**\n\n- Organize by feature domains, not file types\n- Keep your public API clean and limit surface area exports\n- Maintain strict boundaries between client/server code\nReference: https://turbo.build/repo/docs/core-concepts/monorepos\n\n**🧬 Model Data as Contracts**\n\n- Define request/response types explicitly\n- Keep API schemas and models versioned\n- Ensure shared data types live in a single source of truth\nReference: https://www.typescriptlang.org/docs/\n\n**👁️ Predictable Error Handling**\n\n- Represent recoverable failures as typed responses\n- Fail fast with structured error shapes\n- Let Claude review all thrown errors for consistency patterns\n- Unpredictable errors lead to unpredictable product behavior\n\n**✨ React + JSX Type Integration**\n\n- Use JSX element types for safe component interfaces\n- Keep props well-typed — enforce mandatory fields early\n- Prefer composition over prop overload\nReference: https://react.dev/learn/typescript\n\n**🚧 Safer Refactoring with Claude**\n\n- Ask Claude to analyze type flow before renaming or deleting code\n- Replace legacy function signatures incrementally\n- Maintain backward compatibility through adapters during migrations\n- Claude can prevent accidental breakage in large codebases\n\n**📦 Package & Module Health**\n\n- Avoid deep import paths — they break easily\n- Keep dependency lists minimal and audited\n- Prefer stable @types packages over inline hacks\nReference: https://docs.npmjs.com/about-audits\n\n**🔍 Confidence Through Tooling**\n\n- Use ESLint + TypeScript rules to catch consistency issues\n- Include automated checks for unused types and dead code\n- Pair Claude analysis with CI warnings for better developer coaching\nReference: https://typescript-eslint.io/\n\n**🌍 Documentation for Future You**\n\n- Describe complex type constructs briefly above usage\n- Auto-generate contract docs for API consumers\n- Encourage visibility: types should explain themselves\n\n**🔑 TypeScript Engineering Values**\n\n- The type system is a design tool, not a patch\n- Types prevent bugs humans can't see\n- Refactor with intention and visibility\n- Claude is your type auditor — request validations often",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

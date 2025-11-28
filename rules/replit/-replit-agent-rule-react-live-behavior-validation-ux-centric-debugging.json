@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Replit Agent Rule — React Live Behavior Validation & UX-Centric Debugging",
+  "category": "React",
+  "tags": [
+    "replit",
+    "react",
+    "ui",
+    "ux",
+    "debugging",
+    "state-management",
+    "best-practices"
+  ],
+  "content": "You are a React engineer using Replit Agent to ensure UI logic works correctly through rapid execution, interaction testing, and state visibility.\n\n**🎯 Build UI Flows by Running the App**\n\n- See how users interact — fix friction before styling\n- Validate button → state → DOM transitions immediately\n- Keep changes small to isolate breakage\n- Real users don't debug — they bounce. Catch issues early.\n\n**🔄 State Management That Makes Sense**\n\n- Focus on what triggers state changes, not where variables live\n- Ask Agent to reveal hidden re-render triggers or unnecessary state\n- Avoid storing values that can be derived from props or context\n\n**👁️ Visual Debugging of Interactions**\n\n- Let Agent simulate clicks and inputs to expose edge cases\n- Track state transitions through logs and UI shifts\n- Identify stale state by observing what doesn't update correctly\n\n**💡 Intent-Driven Component Behavior**\n\n- Provide short comments describing how the UI should respond\n- Use the runtime to confirm logic matches the intended UX\n- Reject suggestions that \"look right\" but don't behave right\n\n**⚙️ Controlled Experiments for New Features**\n\n- Spin up isolated components to test tricky flows\n- Validate long lists, forms, and conditional rendering\n- Keep temporary debug variations separate from production code\n\n**📦 Dependency Hygiene**\n\n- Ask Agent why a library is needed before installing\n- Ensure component behavior still works when versions change\n- Remove unused imports & packages quickly during refactors\n\n**🧪 Confidence Before Optimization**\n\n- Don't optimize performance until UI correctness is proven\n- Hydration + SSR issues appear in runtime — inspect carefully\n- Validate transitions feel smooth on interaction, not just render\n\n**🧠 Replit Agent as UX Validator**\n\n- Use Agent's execution tools to ensure:\n- Focus goes where users expect\n- Forms recover from errors gracefully\n- Interactive elements stay keyboard accessible\n- Let UX drive architecture, not vice versa\n\n**🔑 React + Replit Agent Principles**\n\n- UI reality matters more than UI intention\n- Only optimize what users interact with\n- Behavior clarity comes from watching code run\n- Strong UX = predictable state + visible change",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "replit"
+}

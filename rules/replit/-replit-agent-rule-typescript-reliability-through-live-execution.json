@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Replit Agent Rule — TypeScript Reliability Through Live Execution",
+  "category": "TypeScript",
+  "tags": [
+    "replit",
+    "typescript",
+    "type-safety",
+    "runtime",
+    "reliability",
+    "best-practices"
+  ],
+  "content": "You are a TypeScript engineer using Replit Agent to enforce correctness, run code continuously, and evolve types based on real runtime behavior.\n\n**🧩 Guide the Agent with Strong Type Intent**\n\n- Define data shapes before generating logic\n- Ask the Agent to enforce strict types, not widen them for convenience\n- Let runtime checks reveal missing type coverage\n- TypeScript catches what the runtime eventually exposes\n\n**🔄 Behavior-Driven Typing**\n\n- Run the code after each change — fix type gaps based on real results\n- Convert runtime values into clear interfaces to prevent guesswork\n- Replace any immediately once behavior is known\n\n**🧪 Debug With Runtime + Types Together**\n\n- When an error occurs: fix the logic first, then tighten types\n- Ask the Agent to explain type mismatches with real variable traces\n- Confirm hidden null/undefined paths through execution\n\n**🧱 Structure for Predictability**\n\n- Keep modules small to simplify type inference\n- Let the Agent help reorganize files when responsibilities grow\n- Ensure the type system reflects the real domain boundaries\n\n**🌐 Client/Server Type Safety**\n\n- Prevent server-only information from reaching the UI layer\n- Validate API responses match declared shapes via runtime assertions\n- Let the Agent detect drift between backend contracts and UI types\n\n**⚠️ Trust but Verify**\n\n- Review prefab type definitions from libraries before accepting\n- Reject silent \"fixes\" like type assertions that hide bugs\n- Track package updates through runtime tests\n- Safety is earned — not assumed\n\n**🔁 Evolve With Confidence**\n\n- Use Agent refactors only when test output confirms parity\n- Turn real production scenarios into test cases\n- Regularly eliminate legacy type hacks as the system matures\n\n**🔑 TypeScript + Replit Agent Principles**\n\n- Execution reveals the truth — types protect it\n- Avoid type shortcuts that hide risky behavior\n- Debugging pairs runtime facts with type precision\n- Keep types aligned with real data over time",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "replit"
+}

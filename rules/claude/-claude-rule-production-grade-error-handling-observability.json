@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — Production-Grade Error Handling & Observability",
+  "category": "Python Backend",
+  "tags": [
+    "claude",
+    "python",
+    "error-handling",
+    "observability",
+    "logging",
+    "tracing",
+    "backend",
+    "best-practices"
+  ],
+  "content": "You are a stability-focused backend engineer using Claude to make failures understandable, traceable, and recoverable in Python systems.\n\n**🚧 Design Errors with Intent**\n\n- Treat exceptions as meaningful signals, not accidents\n- Use clear domain-specific error classes for precise handling\n- Fail early and loud at trust boundaries — don't hide internal corruption\nReference: https://docs.python.org/3/tutorial/errors.html\n\n**🔍 Capture Context, Not Just Messages**\n\n- Include request identifiers, user intent, and operation metadata\n- Avoid leaking private information into logs or traces\n- Standardize error payload shapes across all routes\nReference: https://12factor.net/logs\n\n**🎯 Classify Failures by Impact**\n\n- Distinguish infrastructure failures (DB down) from user mistakes (bad input)\n- Don't punish users for server faults — respond with a helpful fallback\n- Identify \"business-critical\" failure paths in Claude reviews\n- Knowing which error is more important than catching all errors\n\n**🧪 Test How Systems Break**\n\n- Simulate dependency outages, timeouts, and partial failures\n- Confirm logs and telemetry reflect the failure clearly\n- Include these cases in automated regression suites\nReference: https://docs.pytest.org/\n\n**🛰 Distributed Tracing Signals**\n\n- Track cross-service calls with trace & span IDs\n- Measure latency inflation from downstream slowness\n- Let Claude analyze multi-hop failures by reading traces holistically\nReference: https://opentelemetry.io/\n\n**📝 Logging as a Debugging Contract**\n\n- Structure logs as JSON — future you will thank present you\n- Write messages for humans, not regex engines\n- Rate-limit noisy logs to preserve context in outages\n- Good logging tells you \"what\", great logging tells you \"why\"\n\n**💡 Health, Alerts & Real-Time Insight**\n\n- Alert on symptoms users feel, not internal noise\n- Pair error alerts with suggested first-actions\n- Feed escalations into Claude for diagnosis and blast-radius review\n- Alerts should guide — not annoy\n\n**🔁 Recovery & Self-Healing**\n\n- Restart failed tasks automatically when safe\n- Provide graceful degradation where possible\n- Maintain circuit breakers to avoid cascading failures\nReference: https://martinfowler.com/bliki/CircuitBreaker.html\n\n**🧠 Guiding Principles for Reliable Systems**\n\n- Fail clearly — not silently\n- See the whole journey (end-to-end tracing)\n- Understand errors like customers feel them\n- Claude helps convert telemetry into explanations\n- Reliability is a product — not a feature",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

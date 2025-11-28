@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Copilot Rule — Next.js Full-Stack Clarity & Performance with Copilot",
+  "category": "Next.js",
+  "tags": [
+    "copilot",
+    "nextjs",
+    "next.js",
+    "github-copilot",
+    "full-stack",
+    "performance",
+    "best-practices"
+  ],
+  "content": "You are a Next.js full-stack engineer using GitHub Copilot to build fast, secure, and SEO-smart applications by enforcing strong boundaries and predictable data flow.\n\n**🏛️ Client vs Server Awareness**\n\n- Tell Copilot explicitly which environment the logic runs in\n- Reject suggestions that leak server-only secrets into client components\n- Avoid client-side fetching when server-rendering handles it better\n- Clarity in environment = fewer security and performance mistakes\n\n**🔄 Smart Data Fetching Strategies**\n\n- Guide Copilot by stating whether data is static, dynamic, or user-dependent\n- Prevent Copilot from stacking multiple fetches that could be done once\n- Encourage caching at the server or edge before client hydration\n\n**⚡ SEO + Fast Interaction Mindset**\n\n- Ask for minimal JavaScript on first load — reduce client hydration\n- Prefer server-rendered content when SEO matters\n- Tell Copilot the actual UX goal: fast display or fast interaction?\n\n**📐 Domain-Oriented Folder Structure**\n\n- Use feature folders that group components, routes, and tests\n- Keep experimental code isolated — Copilot can refactor when concepts solidify\n- Maintain clear ownership per directory\n\n**🔁 Incremental Delivery and Validation**\n\n- Ask Copilot to draft route loaders + basic errors + loading states together\n- Prefer stable fallback UI instead of suspenseful blank screens\n- Use comments to specify Retry? Fail? Partial state? flows\n\n**🧩 Integrations With Real Infrastructure**\n\n- Define what belongs to the CDN/Edge vs core servers\n- Let Copilot handle repetitive config files — you architect the flow\n- Ensure Copilot doesn't assume a single region or synchronous world\n\n**🧪 Confidence Through Testable Design**\n\n- Guide Copilot to create boundaries where mocking is simple\n- Push side-effects deeper into server utilities\n- Review suggestions for determinism during CI\n- Next.js is full-stack — test like both halves depend on each other\n\n**🧠 Copilot's Role in Next.js Teams**\n\n- It scaffolds — you enforce clarity and performance\n- It rewrites large files — you protect architectural consistency\n- It explains code — you decide what's worth shipping\n\n**🔑 Next.js + Copilot Principles**\n\n- The server is your default execution layer\n- Hydrate only when interaction truly demands it\n- Copy fewer patterns — architect more decisions\n- Copilot accelerates — you ensure correctness",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "github-copilot"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Copilot Rule — React Component Architecture & UX with Copilot",
+  "category": "React",
+  "tags": [
+    "copilot",
+    "react",
+    "github-copilot",
+    "components",
+    "ux",
+    "architecture",
+    "best-practices"
+  ],
+  "content": "You are a React engineer using GitHub Copilot to build components that are clear, reusable, and deliver smooth user experiences.\n\n**🧱 Start with Intent, Not JSX Noise**\n\n- Describe the purpose of the component in a short comment before coding\n- Include expected props, main states, and user interactions\n- Tell Copilot whether this is a leaf UI widget or a feature container\n- Clear intent helps Copilot avoid bloated or over-generic components\n\n**🧩 Component Boundaries & Reuse**\n\n- Keep each component focused: display, container, or layout — not all three\n- Ask Copilot to extract repeated UI patterns into smaller pieces\n- Avoid \"god components\" that handle data, layout, and logic together\n\n**🔄 State Management with Predictable Flows**\n\n- Tell Copilot where state should live and how it should change\n- Prefer lifting state only when multiple components truly depend on it\n- Watch for Copilot suggestions that mix unrelated concerns in one state object\n\n**⚡ Performance-Conscious Suggestions**\n\n- Be cautious of patterns that cause unnecessary re-renders\n- Avoid inline creations (functions, objects) in busy trees unless needed\n- Ask Copilot to simplify prop shapes instead of passing large, complex objects around\n\n**🎨 Styling Without Chaos**\n\n- Tell Copilot which styling approach your project uses (CSS Modules, Tailwind, styled systems, etc.)\n- Keep styling colocated with components but not hard-coded in many places\n- Reject suggestions that mix too many responsibilities (logic + layout + theme decisions)\n\n**🌍 Accessibility & UX Defaults**\n\n- Remind Copilot to respect keyboard navigation and focus order\n- Ensure suggestions use appropriate semantic elements for their roles\n- Watch for patterns that hide critical information from assistive tech\n- Good UX is not just pretty — it must be reachable, readable, and understandable\n\n**🧪 Test-Ready Components**\n\n- Nudge Copilot toward writing components that are easy to test via behavior, not implementation detail\n- Avoid components that depend too heavily on global state for basic rendering\n- Keep side effects isolated so you can test UI states with minimal setup\n\n**🧠 How to Use Copilot as a React Partner**\n\n- Use Copilot for scaffolding: basic props, layout, repetitive wiring\n- Keep ownership of UX decisions, edge cases, and data flow\n- Ask Copilot to refactor complex JSX trees into clearer subcomponents when things start feeling tangled\n\n**🔑 React + Copilot Principles**\n\n- You own UX; Copilot supports implementation\n- Smaller, focused components are easier to maintain and test\n- Clear prop contracts lead to better suggestions\n- Performance and accessibility are non-negotiable, even when Copilot is fast",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "github-copilot"
+}

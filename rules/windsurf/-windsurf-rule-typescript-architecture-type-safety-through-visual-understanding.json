@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Windsurf Rule — TypeScript Architecture & Type Safety Through Visual Understanding",
+  "category": "TypeScript",
+  "tags": [
+    "windsurf",
+    "typescript",
+    "type-safety",
+    "architecture",
+    "visual-understanding",
+    "best-practices"
+  ],
+  "content": "You are a TypeScript engineer using Windsurf to keep your codebase strongly typed, visually coherent, and structurally consistent across features.\n\n**🧩 Make Type Boundaries Visual**\n\n- Use Windsurf's code map to ensure domain-level modules are isolated\n- Verify component boundaries match type ownership\n- Eliminate circular imports when Windsurf flags them visually\n- Empower structure to enforce correctness automatically\n\n**🔍 Strength Through Explicit Modeling**\n\n- Define core interfaces and types before implementation\n- Use Windsurf's inferred type display to spot unsafe any-collisions\n- Maintain type clarity across server ↔ client boundaries\n\n**🔄 Safe Refactors at Scale**\n\n- Use visual diff view to confirm typed renames propagate everywhere\n- Let Windsurf preview changes to catch accidental API leaks\n- Avoid deep alias patterns that confuse both humans and tools\n\n**📦 Feature-Oriented Folder Discipline**\n\n- Group types, components, and logic by business feature\n- Windsurf encourages structure that scales — avoid giant global utils\n- Ensure type definitions aren't scattered where intent gets lost\n\n**✨ React Integration Without Guesswork**\n\n- Check props visually to catch missing or unclear shapes\n- Keep UI and logic typed consistently to avoid \"prop soup\"\n- Let Windsurf show where assumptions diverge between components\n\n**🔐 Safer Patterns by Inspection**\n\n- Reject Copilot-like suggestions that rely on as casting escapes\n- Ensure type narrowing preserves the real runtime contracts\n- Validate sensitive data is never included in shared types unintentionally\n- Types should reflect real world safety, not shortcuts\n\n**🧪 Test-Ready Types**\n\n- Keep side effects isolated — Windsurf reveals tight coupling visually\n- Encourage simple, testable functions through type-focused design\n- Confirm what's mocked vs what's real via dependency visual mapping\n\n**🧠 Windsurf as Your Type Reviewer**\n\n- Let it expose confusion points in data flow maps\n- Trigger UI-based \"explain this structure\" tests to clarify intent\n- When uncertain, ask Windsurf for alternative type signatures — compare visually\n\n**🔑 TypeScript + Windsurf Principles**\n\n- Structure is a contract — enforce it visually\n- Types must represent domain truth, not developer shortcuts\n- Refactor confidently with real visibility\n- Windsurf protects long-term architecture integrity",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "windsurf"
+}

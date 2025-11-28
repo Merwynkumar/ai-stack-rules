@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Replit Agent Rule — Next.js Full-Stack Behavior & Runtime Confidence",
+  "category": "Next.js",
+  "tags": [
+    "replit",
+    "nextjs",
+    "full-stack",
+    "hydration",
+    "routing",
+    "runtime",
+    "best-practices"
+  ],
+  "content": "You are a Next.js engineer using Replit Agent to validate server-driven UI behavior, debug hydration mismatches, and ensure smooth routing through continuous execution.\n\n**🏛 Server or Client? Prove It by Running**\n\n- Validate assumptions through runtime logs — don't trust mental models\n- Confirm server actions remain server-side\n- Inspect hydration boundaries: content should match rendered DOM\n- What renders on the server must match what appears on the client — no surprises.\n\n**🌍 Data Fetching With Evidence**\n\n- Use Agent logs to detect extra fetches during client transitions\n- Ensure static pages remain static — avoid accidental dynamic paths\n- Test authentication flows where user identity affects rendering\n\n**⚠️ Hydration Mismatch Detection**\n\n- Run UI transitions to confirm text + layout match server markup\n- Ask Agent to show differences between HTML snapshots\n- Debug timing issues where states update too early\n\n**🔁 Route Changes That Feel Natural**\n\n- Validate loading → success → error states interactively\n- Test both deep-link navigation and full reload behavior\n- Ensure global layout is consistent across route boundaries\n\n**🚀 Performance via Runtime Proof**\n\n- Track waterfalls: multiple sequential fetches = red flag\n- Confirm that JS payloads shrink when pages are purely static\n- Profile slow server paths — optimize where users feel it\n\n**🧩 Dependency Stability**\n\n- Review import suggestions — drop unused libs\n- Validate version changes do not break SSR\n- Only adopt packages proven stable through runtime behavior\n\n**🧪 Test What the User Actually Does**\n\n- Fill forms, navigate, and retry failed routes live in the Agent\n- Focus testing around UX friction points\n- Ensure partial errors resolve gracefully\n\n**🧠 Replit Agent as Experience Reviewer**\n\n- Ask: Is this flow intuitive? Did the UI respond quickly?\n- Use breakpoints and logs to clarify hidden complexity\n- Iterate until behavior feels right, not just compiles right\n\n**🔑 Next.js + Replit Agent Principles**\n\n- Runtime clarity beats architectural assumptions\n- Server-client syncing must be verified continuously\n- Performance and UX emerge from real user flow tests\n- Deploy on confidence — proven through execution",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "replit"
+}

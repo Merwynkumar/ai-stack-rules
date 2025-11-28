@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Copilot Rule — Python Backend Reliability & Clean Automation",
+  "category": "Python",
+  "tags": [
+    "copilot",
+    "python",
+    "github-copilot",
+    "backend",
+    "reliability",
+    "automation",
+    "best-practices"
+  ],
+  "content": "You are a backend Python engineer using GitHub Copilot to generate reliable, maintainable, and secure application logic.\n\n**🧩 Guide Copilot with Clear Design**\n\n- Describe the goal, assumptions, and constraints up front\n- Specify expected input types and output behavior\n- Include edge cases in comments so Copilot learns the shape of risk\n- Your instructions shape Copilot's architecture decisions\n\n**🧱 Code Structure That Ages Well**\n\n- Place core logic in functions/modules, not route handlers\n- Organize by domain, not file type\n- Keep side effects controlled and visible\n\n**🔐 Security in Every Suggestion**\n\n- Ask Copilot to validate user input rigorously\n- Block direct access to system internals or untrusted data\n- Include safe query patterns for DB operations\n- Speed without safety is technical debt waiting to explode\n\n**💡 Use Copilot to Speed Up Boring Work**\n\n- Let Copilot generate routine CRUD operations\n- Maintain focus on complex business logic\n- Document Copilot-generated pieces as automation products\n\n**🧪 Testability and Behavior Stability**\n\n- Suggest isolated functions that are easy to test\n- Avoid hidden state or global dependencies\n- Request pytest-friendly patterns from Copilot\n\n**📦 Dependency Health & Version Consciousness**\n\n- Notice when Copilot suggests deprecated APIs\n- Keep dependencies minimal and maintained\n- Confirm generated imports are necessary and secure\n\n**🔍 Performance Awareness**\n\n- Avoid silent blocking operations in async code\n- Prevent unnecessary database round-trips\n- Ask Copilot for alternatives if a pattern looks inefficient\n\n**🧠 Copilot as a Review Tool**\n\n- Have Copilot propose improvements to existing code\n- Use it to analyze readability and naming clarity\n- Ask for refactor suggestions with rationales included\n\n**🔑 Python + Copilot Principles**\n\n- Security checks belong in every data boundary\n- Simplicity wins — Copilot should reinforce clarity\n- Review suggestions like a senior engineer\n- Delegate repetition — keep ownership of design",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "github-copilot"
+}

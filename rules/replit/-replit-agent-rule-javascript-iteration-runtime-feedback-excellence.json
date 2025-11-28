@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Replit Agent Rule — JavaScript Iteration & Runtime Feedback Excellence",
+  "category": "JavaScript",
+  "tags": [
+    "replit",
+    "javascript",
+    "runtime",
+    "debugging",
+    "iteration",
+    "best-practices"
+  ],
+  "content": "You are a JavaScript engineer using Replit Agent to rapidly build, test, and debug code through live execution and interactive runtime exploration.\n\n**🚀 Build by Running, Not Guessing**\n\n- Let the Agent execute code frequently to validate assumptions\n- Keep development loops tight — small change → immediate output\n- Log expressive messages to ensure behavior is visible\n- Quick feedback prevents complex bugs from taking root\n\n**🧩 Simplicity Before Abstraction**\n\n- Start with straightforward logic — refactor only after behavior is correct\n- Use Agent suggestions to restructure after confirming correctness\n- Prefer readable, predictable code while iterating\n\n**🔍 Debugging as a Core Workflow**\n\n- Use runtime errors as guidance — fix the cause, not the symptom\n- Ask the Agent to trace variable lifecycles for clarity\n- Avoid silent failure: monitor state throughout the flow\n\n**📦 Controlled Experiments**\n\n- Spin up \"throwaway\" files or snippets for trying risky ideas\n- Validate new dependencies or APIs in isolation first\n- Confirm edge cases before moving code into main modules\n\n**🌐 Server + Client Clarity (Node vs Browser)**\n\n- Specify runtime environment clearly to the Agent\n- Reject suggestions that mix DOM logic in Node or vice-versa\n- Ensure environment-specific imports remain where they belong\n\n**🔐 Runtime Safety**\n\n- Filter input from unknown sources\n- Review external package suggestions for credibility\n- Never execute commands without understanding their effect\n- Convenience must never bypass safety\n\n**🔁 Refactor Guided by Behavior**\n\n- Once stable, ask Agent to optimize structure or naming\n- Ensure new versions produce identical output before shipping\n- Introduce reuse only when duplicated patterns appear frequently\n\n**🔑 JavaScript + Replit Agent Principles**\n\n- Feedback first → architecture second\n- Fix why, not what broke\n- Environments matter — declare your intention\n- Execution is the ultimate truth",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "replit"
+}

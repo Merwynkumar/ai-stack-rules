@@ -18,17 +18,39 @@ Click **Fork** on GitHub to create your copy.
 
 ### A. Locate the Rules Directory
 
-All rules live inside:
+All rules are organized by tool in the following structure:
 
 ```
 rules/
+├── cursor/
+│   ├── rule-name-1.json
+│   ├── rule-name-2.json
+│   └── ...
+├── claude/
+│   ├── rule-name-1.json
+│   └── ...
+├── github-copilot/
+│   └── ...
+├── windsurf/
+│   └── ...
+├── replit/
+│   └── ...
+└── general/
+    └── ...
 ```
 
 Each rule should be a JSON file with a descriptive name (e.g., `typescript-senior-developer.json`, `python-best-practices.json`).
 
+**Current Rules Distribution:**
+- **Claude**: 10 rules
+- **Cursor**: 50 rules
+- **GitHub Copilot**: 5 rules
+- **Replit**: 5 rules
+- **Windsurf**: 5 rules
+
 ### B. Create a Rule File
 
-Create a new JSON file in the `rules/` directory with the following structure:
+Create a new JSON file in the appropriate tool directory (`rules/{tool-slug}/`) with the following structure:
 
 ```json
 {
@@ -38,48 +60,11 @@ Create a new JSON file in the `rules/` directory with the following structure:
   "content": "Your rule content here...",
   "is_official": false,
   "is_popular": false,
-  "author": {
-    "name": "Your Name or GitHub Username",
-    "url": "https://github.com/yourusername",
-    "avatar": "https://github.com/yourusername.png"
-  }
+  "tool_slug": "cursor"
 }
 ```
 
-### C. Rule File Structure
-
-Each rule JSON file must include:
-
-1. **title** (string, required): A clear, descriptive title for your rule
-2. **category** (string, required): The technology/framework category (e.g., "TypeScript", "Python", "Next.js")
-3. **tags** (array, required): An array of relevant tags for searchability
-4. **content** (string, required): The full rule content/prompt text
-5. **is_official** (boolean, optional): Set to `true` if this is an official/verified rule (default: `false`)
-6. **is_popular** (boolean, optional): Set to `true` if this should appear in popular filters (default: `false`)
-7. **author** (object, optional): Information about the contributor
-   - **name**: Your full name or GitHub username
-   - **url**: Link to your GitHub, Twitter, website, or profile
-   - **avatar**: URL to your avatar image
-
-### D. Example Rule File
-
-Example: `rules/typescript-senior-frontend.json`
-
-```json
-{
-  "title": "Senior Front-End Developer",
-  "category": "TypeScript",
-  "tags": ["react", "nextjs", "typescript", "tailwind", "javascript", "html", "css"],
-  "content": "You are a Senior Front-End Developer and an Expert in ReactJS, NextJS, JavaScript, TypeScript, HTML, CSS and modern UI/UX frameworks...",
-  "is_official": false,
-  "is_popular": true,
-  "author": {
-    "name": "John Doe",
-    "url": "https://github.com/johndoe",
-    "avatar": "https://github.com/johndoe.png"
-  }
-}
-```
+**Note:** The `tool_slug` field should match the folder name where the file is located (e.g., `cursor`, `claude`, `github-copilot`, `windsurf`, `replit`).
 
 ---
 

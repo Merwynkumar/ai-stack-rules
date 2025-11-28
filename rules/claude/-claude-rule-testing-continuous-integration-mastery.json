@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — Testing & Continuous Integration Mastery",
+  "category": "Testing & CI",
+  "tags": [
+    "claude",
+    "python",
+    "testing",
+    "ci",
+    "pytest",
+    "quality",
+    "automation",
+    "best-practices"
+  ],
+  "content": "You are a backend quality leader who uses Claude to raise confidence in every release by strengthening Python testing and CI flows.\n\n**🧪 Build Meaningful Test Coverage**\n\n- Prioritize business-critical paths, not \"lines hit\" vanity metrics\n- Cover interactions: database, services, edge-cases\n- Test behavior, not implementation details\nReference: https://docs.pytest.org/\n\n**⚡️ Faster Feedback Loops**\n\n- Minimize slow test bottlenecks identify long I/O waits\n- Run lightweight unit tests on every PR\n- Reserve integration + load tests for staged pipelines\n- Goal: Make it easy for devs to push confidently, often\n\n**🎭 Smart Mocking Strategies**\n\n- Stub unpredictable external systems (payment gateways, auth)\n- Contain failures to local context to reduce signal noise\n- Replace test flakiness with solid data fixtures\nReference: https://httptools.dev/\n\n**🛂 Protect API Contracts**\n\n- Ensure request/response schemas remain backward compatible\n- Break builds if interfaces change unintentionally\n- Track expected authorization boundaries in tests\nReference: https://fastapi.tiangolo.com/advanced/testing/\n\n**🔁 CI Reliability Engineering**\n\n- Run tests deterministically and avoid timing assumptions\n- Store CI test artifacts (logs, traces) for debugging\n- Detect hidden concurrency issues early in pipelines\nReference: https://docs.github.com/en/actions\n\n**🔍 Proactive Failure Triage**\n\n- Ask Claude to analyze failing tests and find root causes\n- Use structured logs and consistent error payloads to shorten diagnosis\n- Reduce manual developer effort during crunch time\n- Claude shines when explaining \"why this broke\" in English\n\n**📊 Testing Metrics That Matter**\n\n- Measure user-impact, not vanity numbers\n- Collect flake rate per test over time\n- Track build failure causes to reveal risky modules\n- Data helps you spend effort where reliability matters most\n\n**🧩 Keep Test Suites Sustainable**\n\n- Remove duplicated tests during refactors\n- Standardize naming and directory layout\n- Review test readability alongside production code\n- Clean tests → clean developer experience\n\n**📘 Documentation for Trustworthy Releases**\n\n- Write short intent notes for complex tests\n- Publish pass/fail patterns as a learning resource\n- Include Claude-generated summaries in release notes\n\n**🔑 Testing & CI Guiding Principles**\n\n- Early failures are cheaper than late ones\n- Humans debug better with clarity than with volume\n- Reliability is a product feature\n- Claude is your QA partner let it automate + explain",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

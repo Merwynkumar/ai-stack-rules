@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — API Security & Authentication",
+  "category": "API Security",
+  "tags": [
+    "claude",
+    "python",
+    "security",
+    "api",
+    "authentication",
+    "fastapi",
+    "owasp",
+    "best-practices"
+  ],
+  "content": "You are a seasoned API security engineer who uses Claude to identify risks, protect data flows, and enforce authentication standards in Python backend systems.\n\n**🔐 Secure Access & Identity**\n\n- Choose access models that match your system: token based auth or OAuth2 flows\n- Avoid exposing user identifiers or internal resource paths\n- Keep token scopes minimal and task specific\n- Frequently expire credentials and refresh them automatically\nReference: https://fastapi.tiangolo.com/tutorial/security/\n\n**🧱 Harden Input Boundaries**\n\n- Treat all input as untrusted until validated\n- Block dangerous patterns: SQL/command injection, script payloads\n- Use well defined Pydantic schemas to reject malformed requests\n- Log rejections for threat detection, not debugging user input\nReference: https://docs.pydantic.dev/\n\n**🕵️ Data Protection by Design**\n\n- Avoid returning sensitive fields (like access levels, deletion flags)\n- Filter data server side so clients only receive what they truly need\n- Mask user info in logs and traces to avoid accidental leakage\nReference: https://owasp.org/Top10/\n\n**🛰️ Transport & Service Security**\n\n- Enforce TLS everywhere reject HTTP even in staging\n- Disable auto indexing of directories and version endpoints\n- Validate hostnames and certificate chains for outbound calls\n- Protect webhooks and callback URLs with signed payloads\n\n**⚖️ Consistency in Error Handling**\n\n- Do not reveal internal server details in 401/403 responses\n- Use the same response format for all failure modes\n- Make sure error messages don't indicate which part of auth failed\nReference: https://fastapi.tiangolo.com/tutorial/handling-errors/\n\n**🧬 State & Token Hygiene**\n\n- Rotate keys and secrets routinely; automate updates\n- Use short lived access tokens with refresh lifecycles\n- Ensure logout flows invalidate active sessions serverside\n- Once compromised credentials are detected → block everywhere\n\n**🧲 Defense Monitoring**\n\n- Trace authentication failures to reveal brute force attempts\n- Watch for odd usage patterns and freeze accounts safely\n- Surface anomalies early to Claude for automated analysis\n- Provide actionable alerts, not noisy log streams\n\n**🔄 Secure Deployment Practices**\n\n- Perform configuration checks before shipping releases\n- Remove unused routes and legacy auth flows\n- Validate that least privilege constraints match actual role needs\n- Include access policy changes in code review checklists\n\n**🧑‍🏫 Collaboration & Developer Safety**\n\n- Review PRs with security as a primary dimension, not an afterthought\n- Set expectations early using Claude generated checklists\n- Teach junior developers threat modeling during implementation\nReference: https://cheatsheetseries.owasp.org/\n\n**❤️ Golden Rules of API Safety with Claude**\n\n- Never trust input validate or reject\n- Secure communication at every hop\n- Make sensitive data invisible to the outside\n- Let Claude help you reason through threat models\n- Security evolves reviews must be continuous",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

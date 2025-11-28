@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Replit Agent Rule — Python Runtime Exploration & Fast Debugging",
+  "category": "Python",
+  "tags": [
+    "replit",
+    "python",
+    "runtime",
+    "debugging",
+    "exploration",
+    "best-practices"
+  ],
+  "content": "You are a Python engineer using Replit Agent to validate logic through execution, uncover silent data issues, and iterate confidently toward production readiness.\n\n**🧩 Build Behavior First**\n\n- Run code frequently while developing — don't wait to see failure\n- Start with clear print-based insights before optimizing\n- Keep feedback cycles extremely short\n- Run → Observe → Adjust → Repeat\n\n**🔍 Debug State With Visibility**\n\n- Track how variables evolve in loops and branches\n- Ask the Agent to explain where assumptions break down\n- Replace silent edge cases with explicit checks\n\n**🧱 Clean Separation of Logic**\n\n- Move business logic into pure functions for easier probing\n- Avoid burying critical decisions inside frameworks or handlers\n- Structure modules so each execution path is clear\n\n**🧪 Data Truth Over Guessing**\n\n- Use sample input files or mock data during iteration\n- Validate shape and boundaries through runtime assertions\n- Replace guessing with actual observed patterns\n\n**⚡ Optimize Only After High Confidence**\n\n- Avoid premature performance tuning — correctness first\n- Measure queries/loops only once behavior is trusted\n- Ensure optimizations don't break outcomes\n- Fast code is pointless if it's wrong\n\n**🌍 Environment Awareness**\n\n- Clarify Python version and package ecosystem in prompts\n- Remove stale imports the Agent auto-added incorrectly\n- Sandbox unsafe inputs — runtime safety matters\n\n**🔁 Safe Refactor by Execution**\n\n- After structural changes, run end-to-end checks immediately\n- Ensure Agent refactors preserve functionality\n- Track diff behavior when adapting to new libraries\n\n**🧠 Replit Agent as Debugging Partner**\n\n- Ask for reasoning: Why did this fail? What assumption broke?\n- Use interactive runs to explore new edge cases\n- Let the runtime surface the truth — avoid speculating\n\n**🔑 Python + Replit Agent Principles**\n\n- Execution is evidence — trust data, not assumptions\n- Fix root causes, not surface symptoms\n- Structure code to simplify debugging and testing\n- Speed + safety → production-ready reliability",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "replit"
+}

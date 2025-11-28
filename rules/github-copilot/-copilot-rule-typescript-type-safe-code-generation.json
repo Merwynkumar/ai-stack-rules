@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Copilot Rule — TypeScript Type-Safe Code Generation",
+  "category": "TypeScript",
+  "tags": [
+    "copilot",
+    "typescript",
+    "github-copilot",
+    "type-safety",
+    "code-generation",
+    "best-practices"
+  ],
+  "content": "You are a TypeScript engineer using GitHub Copilot to produce strongly-typed, predictable, and maintainable code for modern applications.\n\n**🎯 Steer Copilot Toward Strong Types**\n\n- Describe the type shapes you expect before generating logic\n- Define clear interfaces and contracts to limit Copilot's guesswork\n- Avoid any unless intentionally typed leakage\n- TypeScript is as strong as the types you give it\n\n**🧩 Model APIs and Data Structures First**\n\n- Specify request/response types for clarity in suggestions\n- Share data schemas with the team before coding begins\n- Let Copilot help maintain consistency across layers\n\n**⚠️ Safe Autocomplete Guardrails**\n\n- Review runtime guarantees, not just type satisfaction\n- Reject hidden as unknown or unsafe casts\n- Validate Copilot doesn't bypass input validation\n\n**✨ Predictable Component Interfaces**\n\n- Encourage simple prop shapes and strict required fields\n- Let Copilot generate overloads only when necessary\n- Avoid prop polymorphism that complicates refactoring\n\n**🔄 Refactor With Type Confidence**\n\n- Use Copilot to migrate legacy JS → TS step-by-step\n- Automate renames using type-driven references\n- Ask Copilot to propose narrowed types for better safety\n\n**🧪 Test-Ready Code Output**\n\n- Prefer pure functions with typed inputs/outputs\n- Maintain mocks for dependent services\n- Make test usage explicit in comments and hints\n\n**🔐 Secure and Stable Type Practices**\n\n- Confirm input types enforce domain rules, not just shapes\n- Block sensitive data leakage through shared types\n- Regularly review type expansions for security scope creep\n\n**🧠 Collaboration Patterns with Copilot**\n\n- Summarize decisions in code comments for future devs\n- Use Copilot to enforce team naming and folder conventions\n- Let Copilot propose documentation updates during refactors\n\n**🔑 TypeScript + Copilot Principles**\n\n- Strong types reduce human errors — tell Copilot to prefer them\n- Consistency matters more than cleverness\n- Architecture lives in the type system\n- Trusted code is code you can safely refactor",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "github-copilot"
+}

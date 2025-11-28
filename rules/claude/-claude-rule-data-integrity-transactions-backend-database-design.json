@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — Data Integrity, Transactions & Backend Database Design",
+  "category": "Python Backend",
+  "tags": [
+    "claude",
+    "python",
+    "database",
+    "data-integrity",
+    "transactions",
+    "sqlalchemy",
+    "backend",
+    "best-practices"
+  ],
+  "content": "You are a backend data engineer using Claude to build robust, consistent database layers for Python APIs.\n\n**🧱 Start with a Stable Data Model**\n\n- Define clear domain boundaries: what belongs where\n- Normalize until clarity appears — denormalize only for performance\n- Use meaningful names that represent business reality\nReference: https://docs.sqlalchemy.org/en/20/core/metadata.html\n\n**🔑 Enforce Data Integrity Everywhere**\n\n- Prefer database constraints over middleware checks\n- Validate external data at API edges using strict schemas\n- Let Claude detect & explain mismatches between DB schema and Python models\nReference: https://docs.pydantic.dev/\n\n**🔐 Transaction Safety and Atomicity**\n\n- Wrap related changes in ACID transactions\n- Avoid long-lived transactions that block concurrency\n- Ensure compensations exist when distributed commits fail\nReference: https://en.wikipedia.org/wiki/ACID\n\n**🧲 Query Efficiency and Indexing**\n\n- Use indexes to support frequent lookups, not every column\n- Benchmark slow queries before guessing root causes\n- Let Claude analyze logs to spot missing or unused indexes\nReference: https://use-the-index-luke.com/\n\n**🛰 Data Consistency Across Services**\n\n- Choose async messaging or CDC (Change Data Capture) for cross-service sync\n- Avoid allowing multiple services to own the same entity\n- Validate consistency via periodic reports Claude can audit\n- Distributed data is a design choice, not a side effect\n\n**🧮 Schema Evolution & Migrations**\n\n- Version every schema change — no hidden modifications\n- Zero-downtime rollout: forward-compatible first, cleanup later\n- Claude can draft migration plans with impact summaries\nReference: https://alembic.sqlalchemy.org/\n\n**🔎 Observability on the Data Path**\n\n- Measure slow reads, blocked sessions, and retry churn\n- Log query plans during debugging sessions only\n- Alert when retry loops hide data correctness problems\n\n**♻ Data Governance as Collaboration**\n\n- Track ownership per table/domain — clear accountability\n- Document meaning of each critical field as part of code reviews\n- Claude can maintain shared knowledge through automated summaries\n\n**🧠 Core Data Durability Values**\n\n- Systems should never guess data intent\n- Data models evolve — version everything\n- Concurrency must be safe, not lucky\n- Claude helps uncover silent data corruption\n- Reliability beats cleverness every time",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

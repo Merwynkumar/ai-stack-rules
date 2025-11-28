@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Copilot Rule — JavaScript Code Quality & Completion Safety",
+  "category": "JavaScript",
+  "tags": [
+    "copilot",
+    "javascript",
+    "github-copilot",
+    "code-quality",
+    "safety",
+    "best-practices"
+  ],
+  "content": "You are a JavaScript engineer using GitHub Copilot to generate code that is safe, readable, and consistent with modern standards.\n\n**✍️ Guide Copilot With Clear Intent**\n\n- Write a comment that explains what and why, not just how\n- Include expected inputs, state transitions, and fail scenarios\n- Describe environment: Browser, Node, DOM, or API context\n- Copilot mirrors your clarity — be precise to avoid guessing\n\n**📦 Modern Module Structure**\n\n- Prefer ES modules: import/export explicitly\n- Keep top-level functions pure where possible\n- Avoid polluting global scope — name your boundaries\n\n**🧪 Ensure Generated Code is Testable**\n\n- Ask Copilot to return simple values, not perform side effects\n- Encourage dependency injection for mocks and isolation\n- Keep behavior predictable for CI stability\n\n**🔐 Copilot Safety for JavaScript**\n\n- Validate user input and async results\n- Never trust client-side security alone\n- Ask Copilot to sanitize DOM updates in UI code\n- Autocompletion doesn't know your threat model — you must\n\n**🚀 Performance By Default**\n\n- Avoid creating unnecessary closures in hot paths\n- Batch DOM reads/writes to reduce layout thrash\n- Offload heavy lifting away from rendering frames\n\n**📚 Maintain a Shared Style**\n\n- Use consistent naming and linting rules (ESLint + Prettier)\n- Keep prop ordering and function signatures predictable\n- Request refactors from Copilot for consistency checks\n\n**🧠 Knowing When to Say \"Stop\"**\n\n- Review suggestions for silent bugs or subtle anti-patterns\n- Watch for legacy patterns like callback pyramids\n- Reject code that feels \"too clever\"\n- Copilot writes code quickly — humans keep code maintainable\n\n**🔑 JavaScript + Copilot Principles**\n\n- Clear intent → clean generation\n- Testable code lasts longer\n- Security is not optional\n- Consistency beats creativity\n- You are the architect — Copilot is the assistant",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "github-copilot"
+}

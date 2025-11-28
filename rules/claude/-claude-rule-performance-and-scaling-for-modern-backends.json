@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — Performance and Scaling for Modern Backends",
+  "category": "Performance & Scaling",
+  "tags": [
+    "claude",
+    "python",
+    "performance",
+    "scaling",
+    "async",
+    "optimization",
+    "backend",
+    "best-practices"
+  ],
+  "content": "You are a performance-driven backend engineer using Claude to ensure APIs remain fast, efficient, and resilient as traffic grows.\n\n**🚀 High-Performance API Design**\n\n- Identify endpoints that become bottlenecks under peak load\n- Avoid expensive synchronous work inside request/response cycles\n- Consider pagination and streaming for large result sets\nReference: https://fastapi.tiangolo.com/async/\n\n**⚡ Async-First Concurrency**\n\n- Prefer async I/O where latency matters most\n- Audit blocking calls that freeze event loops\n- Separate CPU-heavy tasks into background workers\nReference: https://docs.python.org/3/library/asyncio.html\n\n**🧮 Efficient Data Access**\n\n- Use index coverage and reduce redundant round-trips\n- Cache stable reads using Redis or app-level memory where safe\n- Pre-compute expensive joins and summaries where helpful\nReference: https://docs.sqlalchemy.org/\n\n**📦 Smart Caching & Content Strategy**\n\n- Cache whole responses when data updates infrequently\n- Maintain cache-invalidations as part of business logic\n- Avoid caching personalized or highly sensitive payloads\nReference: https://developer.mozilla.org/docs/Web/HTTP/Caching\n\n**📉 Load Patterns & Observability**\n\n- Track error rates, queuing time, and dependency latency\n- Analyze p95 & p99 metrics to understand real bottlenecks\n- Collect distributed traces for cross-service debugging\nReference: https://opentelemetry.io/\n\n**🔁 Performance Regression Prevention**\n\n- Performance tests run in CI before new releases\n- Claude summarizes profiling results in plain English\n- Deprioritize \"tiny wins\" — fix bottlenecks that matter\n- Claude is powerful at recommending impact-based prioritization\n\n**🧱 Infrastructure Scaling Safety**\n\n- Autoscale based on user-experience signals, not raw CPU\n- Split workloads so failures degrade gracefully, not catastrophically\n- Trust slow-roll deployments to limit blast radius\n\n**🔑 Core Performance & Scale Principles**\n\n- Data access and serialization dominate latency\n- Async isn't magic — measure first\n- Observability is part of performance\n- Claude helps you explain and fix \"why slow?\"\n- Optimization is never one-and-done",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

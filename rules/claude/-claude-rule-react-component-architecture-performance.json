@@ -1,0 +1,17 @@
+{
+  "title": "🧠 Claude Rule — React Component Architecture & Performance",
+  "category": "React",
+  "tags": [
+    "claude",
+    "react",
+    "frontend",
+    "components",
+    "performance",
+    "accessibility",
+    "best-practices"
+  ],
+  "content": "You are a frontend engineer using Claude to craft fast, accessible, and maintainable React applications with thoughtful component design.\n\n**🧱 Component Architecture with Purpose**\n\n- Group UI by feature domain, not atomic elements\n- Keep components responsible for one concern at a time\n- Elevate reusable logic into custom hooks\nReference: https://react.dev/learn/thinking-in-react\n\n**🔄 Data Flow That Scales**\n\n- Push state down only when a component owns that data\n- Lift state up cautiously — avoid global overload\n- Consider context or external stores only for shared logic\nReference: https://react.dev/learn\n\n**⚡ Performance & Re-render Control**\n\n- Minimize re-renders by stabilizing props\n- Memoize components based on render cost\n- Validate component tree performance with dev tools\nReference: https://react.dev/reference/react/memo\n\n**🌍 Accessibility Built-In**\n\n- Use semantic HTML as your base\n- Ensure keyboard reachability for all actions\n- Provide text alternatives and visible focus states\nReference: https://www.w3.org/WAI/standards-guidelines/aria/\n\n**🎨 Styling That Doesn't Fight the Component**\n\n- Choose styling strategy aligned with maintenance goals: CSS Modules, Tailwind, or styled systems\n- Keep style logic close to components\n- Name tokens with intent: purpose > appearance\n- Accessibility and styling are part of usability, not decoration\n\n**🔍 Predictable Error & Loading UX**\n\n- Show clear UI states: loading, empty, error, success\n- Avoid flashing inconsistent states on fast transitions\n- Claude can help review UX flows for missed edge-cases\n\n**📦 Stable Contracts for Reusability**\n\n- Define props clearly — avoid prop bloat\n- Document expectations directly above component usage\n- Use Claude to enforce consistent naming + behavior patterns\n\n**🧪 UI Confidence Through Testing**\n\n- Validate visible behavior, not internal implementation\n- Use automated accessibility checks in CI\n- Let Claude generate missing tests for fragile interactions\nReference: https://testing-library.com/docs/\n\n**🧠 React Engineering Mindset**\n\n- Components tell stories — make them readable\n- Data moves intentionally — not magically\n- Performance starts with organization\n- Claude helps explore trade-offs, not make guesses",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — Python Async & Concurrency Best Practices",
+  "category": "Python",
+  "tags": [
+    "claude",
+    "python",
+    "async",
+    "concurrency",
+    "asyncio",
+    "performance",
+    "backend",
+    "best-practices"
+  ],
+  "content": "You are an async-first backend engineer using Claude to design fast, reliable, and scalable I/O systems in Python.\n\n**🧩 Understand When Async Matters**\n\n- Use async only when workloads wait on I/O (databases, APIs, file/network ops)\n- CPU-bound tasks should move to worker pools — not the event loop\n- Claude can help classify endpoints: \"wait-heavy\" vs \"compute-heavy\"\nReference: https://docs.python.org/3/library/asyncio-task.html\n\n**🔄 Clean Event Loop Management**\n\n- Never block the loop with long computations\n- Prefer async drivers for DB and network calls\n- Use cancellation-friendly patterns to avoid zombie tasks\nReference: https://docs.python.org/3/library/asyncio-eventloop.html\n\n**🧱 Design Predictable Async APIs**\n\n- Keep route handlers pure: orchestrate work, don't embed logic\n- Propagate cancellation upstream when clients disconnect\n- Establish clear timeouts for external calls to avoid hangs\nReference: https://fastapi.tiangolo.com/async/\n\n**🗄️ Async Database Efficiency**\n\n- Use connection pooling and reuse sessions efficiently\n- Fetch only what's needed — protect memory footprints\n- Backpressure slow consumers to avoid unbounded queues\nReference: https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html\n\n**🧮 Error Safety in Async Systems**\n\n- Avoid suppressing exceptions inside tasks — they vanish silently\n- Log failures with tracebacks for diagnostic clarity\n- Aggregate partial results carefully to avoid corrupted responses\n- Errors in async code hide deeper — make debugging intentional\n\n**🧲 Concurrency Controls**\n\n- Limit parallelism using semaphores or task groups\n- Fail gracefully when systems are under stress\n- Share mutable state only through secure primitives\nReference: https://peps.python.org/pep-0703/\n\n**📊 Monitoring Real Latency Assets**\n\n- Track queue depth, wait time, retry counts\n- Measure tail latency (p95/p99) instead of averages\n- Claude helps analyze telemetry for targeted fixes\nReference: https://opentelemetry.io/\n\n**🧠 Performance Tuning Before Scaling Out**\n\n- Start with profiling to identify blocking calls\n- Introduce caches around repetitive workloads\n- Scale horizontally only after fixing core choke points\n- Async is a performance tool — not a replacement for good architecture\n\n**🧭 Guiding Principles for Async Excellence**\n\n- Async is a business decision: use it purposefully\n- Do one thing concurrently — do everything reliably\n- Visibility & monitoring are non-optional\n- Claude can reason about task flow better than humans under pressure",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}

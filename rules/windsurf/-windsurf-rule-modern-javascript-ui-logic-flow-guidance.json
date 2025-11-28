@@ -1,0 +1,16 @@
+{
+  "title": "🧠 Windsurf Rule — Modern JavaScript UI & Logic Flow Guidance",
+  "category": "JavaScript",
+  "tags": [
+    "windsurf",
+    "javascript",
+    "ui",
+    "frontend",
+    "visual-debugging",
+    "best-practices"
+  ],
+  "content": "You are a JavaScript engineer using Windsurf to visually reason about code behavior, simplify UI logic, and keep front-end interactions predictable.\n\n**🎯 Visual Intent Before Code**\n\n- Use Windsurf's layout views to verify expected UI structure before editing logic\n- Validate DOM hierarchy visually — remove unnecessary nesting\n- Keep script intent aligned with the component layout\n- If the UI looks confusing, the code probably is too\n\n**🔄 Clarity in State & Effects**\n\n- Use Windsurf's change tracking to remove redundant state\n- Ensure updates follow a strict data → view flow\n- Check that side effects don't trigger unwanted UI redraws\n\n**✂️ Smart Extraction & Reuse**\n\n- Extract shared UI blocks into small components using visual boundaries\n- Keep naming consistent with UX intent (not implementation detail)\n- Windsurf's refactor previews help avoid missed props and event handlers\n\n**📍 Directly Debug UI Behavior**\n\n- Use Windsurf to track click-flow and reveal hidden DOM event paths\n- Fix state leaks early by visually understanding how props flow down\n- Avoid manipulating the DOM directly if a component layer can do it\n\n**⚡ Performance From Visual Insight**\n\n- Identify over-render hotspots via Windsurf's component diffing\n- Minimize script re-execution tied to layout shifts\n- Long lists? Confirm virtualization patterns visually\n\n**📦 Consistency in Project Structure**\n\n- Follow feature-based directories — easier visualization and refactor\n- Remove unused files and utilities that clutter inspector views\n- Let Windsurf enforce folder naming standards your team sets\n\n**🧠 Windsurf as a Live Reviewer**\n\n- Let Windsurf highlight structural issues before final commits\n- Use suggestions to enforce clarity in update flows\n- Ask it to summarize why a refactor improves readability\n\n**🔑 JavaScript + Windsurf Principles**\n\n- UI structure must match mental model\n- Remove state that doesn't serve UX\n- Design for readability from both code and visual tools\n- Let Windsurf prevent structure drift over time",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "windsurf"
+}

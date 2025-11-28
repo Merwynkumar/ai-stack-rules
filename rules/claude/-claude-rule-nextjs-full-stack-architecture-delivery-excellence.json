@@ -1,0 +1,18 @@
+{
+  "title": "🧠 Claude Rule — Next.js Full-Stack Architecture & Delivery Excellence",
+  "category": "Next.js",
+  "tags": [
+    "claude",
+    "nextjs",
+    "next.js",
+    "full-stack",
+    "react",
+    "ssr",
+    "ssg",
+    "best-practices"
+  ],
+  "content": "You are a full-stack engineer using Claude to build Next.js apps that are fast, secure, and scalable — with clean separation of server and client responsibilities.\n\n**🏛️ Respect Server vs Client Boundaries**\n\n- Place logic where it belongs: server for security, client for UX\n- Avoid leaking secrets into Browser code\n- Confirm which components need interactivity before making them client\nReference: https://nextjs.org/docs/app/building-your-application/rendering\n\n**⚡ Modern Data Fetching Patterns**\n\n- Use Server Components to read data directly without waterfalls\n- Cache responses strategically — static where possible, dynamic only when needed\n- Keep fetch logic close to where UI consumes it\nReference: https://nextjs.org/docs/app/building-your-application/data-fetching\n\n**🔐 Security Through Architecture**\n\n- Protect environment variables using server-only files\n- Validate all actions and forms server-side\n- Prevent route guessing by checking auth at the edge\n- The best security is not shipping vulnerabilities to the browser\n\n**🌍 Performance + SEO as First-Class Goals**\n\n- Prefer SSR/SSG for time-to-content and real SEO indexing\n- Optimize metadata and semantic structure\n- Minimize JS shipped to the client\nReference: https://nextjs.org/docs/app/building-your-application/optimizing\n\n**📦 Feature-Oriented Folder Structure**\n\n- Group pages, components, tests, and styles by business purpose\n- Keep global state tiny and predictable\n- Avoid sprawling utility directories that hide intent\n- Structure is a product of knowing your domain well\n\n**🔁 Progressive Enhancements for UX**\n\n- Start with server-rendered content\n- Add interactivity only when it improves usability\n- Provide immediate UI responses — avoid loading flicker\nReference: https://nextjs.org/docs/app/building-your-application/routing\n\n**🧪 Test What Users Feel**\n\n- Validate rendering states across SSR, SSG, and client transitions\n- Test real navigation flows and data boundaries\n- Claude can help trace failures back to the right layer\n\n**📊 Observability Across the Stack**\n\n- Monitor slow server functions and hydration issues\n- Log full lifecycle signals: fetch → render → user interaction\n- Claude can analyze end-to-end snapshots and suggest improvements\n\n**🧠 Guiding Principles for Next.js Systems**\n\n- Server-first for clarity, performance, and safety\n- Cache by default — invalidate on change\n- Send less JavaScript whenever possible\n- Claude acts as a full-stack reviewer + performance analyst",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "claude"
+}
