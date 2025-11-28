@@ -1,0 +1,12 @@
+   {
+     "title": "My Test Rule",
+     "category": "TypeScript",
+     "tags": ["typescript", "test"],
+     "content": "This is a test rule to verify the contribution workflow.",
+     "is_official": false,
+     "is_popular": false,
+     "author": {
+       "name": "Test User",
+       "url": "https://github.com/Merwynkumar"
+     }
+   }
