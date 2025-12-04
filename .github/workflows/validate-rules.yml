@@ -1,27 +1,62 @@
-name: Validate Rules
+# debug-json.ps1
+Write-Host "=== JSON File Debugger ===" -ForegroundColor Cyan
+Write-Host ""
 
-on:
-  pull_request:
-    paths:
-      - 'rules/**/*.json'
-  push:
-    branches:
-      - main
+$jsonFile = "rules/python-test-name.json"
 
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Validate JSON files
-        run: |
-          echo "Validating JSON files in rules/ directory..."
-          for file in rules/*.json; do
-            if [ -f "$file" ]; then
-              echo "Validating $file..."
-              python3 -m json.tool "$file" > /dev/null || exit 1
-            fi
-          done
-          echo "All JSON files are valid!"
+if (-not (Test-Path $jsonFile)) {
+    Write-Host "❌ File not found: $jsonFile" -ForegroundColor Red
+    exit 1
+}
 
+Write-Host "📁 File: $jsonFile" -ForegroundColor Yellow
+Write-Host "Size: $((Get-Item $jsonFile).Length) bytes"
+Write-Host ""
+
+# Show content
+Write-Host "📄 File content:" -ForegroundColor Yellow
+Get-Content $jsonFile -Raw | Select-Object -First 200
+Write-Host ""
+
+# Check first bytes for BOM
+Write-Host "🔤 First 10 bytes (hex):" -ForegroundColor Yellow
+$bytes = [System.IO.File]::ReadAllBytes($jsonFile)
+$bytes[0..9] | ForEach-Object { "{0:X2} " -f $_ }
+Write-Host ""
+
+# Check for UTF-8 BOM (EF BB BF)
+if ($bytes[0] -eq 0xEF -and $bytes[1] -eq 0xBB -and $bytes[2] -eq 0xBF) {
+    Write-Host "⚠️  UTF-8 BOM detected! (EF BB BF)" -ForegroundColor Red
+    Write-Host "To remove: Get-Content $jsonFile -Raw | Out-File $jsonFile -Encoding UTF8 -NoNewline"
+}
+
+# Try to validate with Python
+Write-Host "✅ Validating with Python..." -ForegroundColor Yellow
+try {
+    $content = Get-Content $jsonFile -Raw
+    $null = ConvertFrom-Json $content
+    Write-Host "🎉 SUCCESS: JSON is valid!" -ForegroundColor Green
+} catch {
+    Write-Host "❌ ERROR: Invalid JSON!" -ForegroundColor Red
+    Write-Host "Error: $_"
+    
+    # Create a clean test file
+    Write-Host ""
+    Write-Host "💡 Creating a clean test file: rules/test-clean.json" -ForegroundColor Cyan
+    @'
+{
+  "title": "TEST RULE",
+  "category": "Test",
+  "tags": ["test"],
+  "content": "Test content",
+  "is_official": false,
+  "is_popular": false,
+  "tool_slug": "cursor"
+}
+'@ | Out-File "rules/test-clean.json" -Encoding UTF8
+    
+    Write-Host "✅ Clean test file created. Compare with your file."
+}
+
+Write-Host ""
+Write-Host "=== Debug Complete ===" -ForegroundColor Cyan
