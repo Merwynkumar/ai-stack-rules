@@ -19,9 +19,17 @@ jobs:
           echo "Validating JSON files in rules/ directory..."
           for file in rules/*.json; do
             if [ -f "$file" ]; then
-              echo "Validating $file..."
-              python3 -m json.tool "$file" > /dev/null || exit 1
+              echo "=== Validating $file ==="
+              # Show first line for debugging
+              echo "First line: $(head -1 "$file")"
+              # Validate and show error if it fails
+              if ! python3 -m json.tool "$file" > /dev/null; then
+                echo "❌ ERROR in $file"
+                echo "Full error output:"
+                python3 -m json.tool "$file" 2>&1 || true
+                exit 1
+              fi
+              echo "✅ $file is valid"
             fi
           done
           echo "All JSON files are valid!"
-
