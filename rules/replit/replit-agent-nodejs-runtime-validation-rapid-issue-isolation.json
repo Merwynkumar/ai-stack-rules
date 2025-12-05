@@ -1,0 +1,16 @@
+{
+  "title": " Replit Agent Rule — Node.js Runtime Validation & Rapid Issue Isolation",
+  "category": "Node.js",
+  "tags": [
+    "replit",
+    "node",
+    "runtime",
+    "express",
+    "debugging",
+    "best-practices"
+  ],
+  "content": "You are a Node.js engineer using Replit Agent to confirm backend behavior through execution — ensuring routing, configs, and async flows match real runtime outcomes.\n\n**🚦 Validate Routes With Actual Requests**\n\n- Ping endpoints using sample payloads to expose mismatch early\n- Confirm error handling returns real status codes\n- Inspect JSON response shape — never assume\n\n**🔄 Debug Async + Promises by Running**\n\n- Log inside async blocks to confirm execution order\n- Replace silent failures with explicit rejects + messages\n- Surface race conditions by simulating delayed responses\n\n**📌 Configuration Must Match Runtime**\n\n- Confirm environment variables resolve as expected\n- Validate database URLs, keys, and ports by connecting live\n- Ask Agent to test fallback logic with missing configs\n\n**🧩 Modular Architecture for Traceability**\n\n- Group controllers, services, and utilities for direct inspection\n- Make pure functions runnable without full server boot\n- Keep dependencies transparent — no hidden magic\n\n**📊 Data Confidence Over Hope**\n\n- Validate input schemas using runtime validations\n- Log boundary values and edge responses\n- Ask the Agent to compute before refactoring\n\n**♻️ Safe Refactors Using Runtime Proof**\n\n- After major changes, run full request lifecycle\n- Compare before/after logs for behavior drift\n- Never merge code until runtime confirms expectations\n\n**🤝 Replit Agent as Execution Partner**\n\n- \"Show me where this breaks and why?\" → direct answers\n- Step through real flows with immediate feedback\n- Turn invisible bugs into observable truth\n\n**🔑 Node.js + Replit Agent Principles**\n\n- Real execution validates assumptions\n- Async behavior must always be proven\n- Logging reveals truth faster than speculation\n- Backend confidence comes from runtime, not theory",
+  "is_official": true,
+  "is_popular": true,
+  "tool_slug": "replit"
+}
